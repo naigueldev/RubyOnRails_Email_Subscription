@@ -5,7 +5,7 @@ class Post < ApplicationRecord
 
   def send_email_to_members
     Member.all.each do |member|
-      SubscriptionMailer.send_email(member.email,self).deliver_now
+      SubscriptionMailer.send_email(member.email,self).deliver
     end
   end
 end
