@@ -7,8 +7,8 @@ ActionMailer::Base.smtp_settings = {
     :port => 587,
     #:domain => "",
     :ssl => false,
-    :user_name => '',
-    :password => '',
+    :user_name => '<email>',
+    :password => '<password>',
     :authentication => "plain"
 
 }
